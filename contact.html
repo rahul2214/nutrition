@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333" alt="Srini Property Services Company Logo" title="Srini Property Services Logo"
+                    height="50px" loading="lazy">
+                <h1><strong> Nutryx</strong></h1>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"> <strong> Home </strong></a></li>
+            <li><a href="plans.html"> <strong> Plans</strong></a></li>
+            <li><a href="about.html"> <strong> About Us </strong></a></li>
+            <li><a href="contact.html"> <strong> Contact </strong></a></li>
+
+        </ul>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+    </nav>
+    <div class="side-nav" id="side-nav">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul class="side-nav-links">
+            <li><a href="index.html"> <strong> Home</strong></a></li>
+            <li><a href="plans.html"> <strong> Plans</strong></a></li>
+            <li><a href="about.html"> <strong> About Us </strong></a></li>
+            <li><a href="contact.html"> <strong> Contact</strong></a></li>
+
+        </ul>
+    </div>
+    <section class="contactus-section">
+        <div class="container revealUp">
+            <p style="color: #333;">BE IN TOUCH</p>
+            <h2 style="color: #333;">CONTACT</h2>
+
+        </div>
+    </section>
+
+
+    <!-- Insert this content in the "Content for each page will go here" section -->
+    <div class="contact-section ">
+
+        <div class="contact-header revealUp">
+            <h2>CONTACT US</h2>
+        </div>
+        <div class="contact-content revealUp">
+            <div class="office-info">
+                <h2>TO SPEAK WITH US,
+                    <br>
+                    PLEASE CALL OR EMAIL US:
+                </h2>
+                <p>Tel: +919515826360</p>
+                <p>Email: nutryx.in@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="127add98-463f-47f0-b3dc-e4d72cf68c68">
+                    <div class="form-row">
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                        <input type="text" name="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="number" name="phoneNumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="specificRequirements" placeholder="Enter any specific requirements"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+  <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
+        rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+            title="Follow us on Instagram" loading="lazy">
+        <!-- Follow us -->
+    </a>
+
+    <a href="https://wa.me/+919515826360" class="whatsapp-button" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+            title="Contact Us via WhatsApp" loading="lazy">
+        <!--         Chat with us -->
+    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nutryx. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Carousel Logic
+        let slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+
+            // Add smooth fade-in/out animations
+            Array.from(slides).forEach((slide, i) => {
+                gsap.to(slide, {
+                    duration: 0.5,
+                    opacity: i === (slideIndex - 1) ? 1 : 0,
+                    display: i === (slideIndex - 1) ? 'block' : 'none',
+                    ease: "power1.inOut"
+                });
+            });
+        }
+
+        // Scroll Animations with GSAP
+
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".revealUp").forEach(function (elem) {
+            ScrollTrigger.create({
+                trigger: elem,
+                start: "top 80%",
+                end: "bottom 20%",
+                once: true, // Animation triggers only once
+                onEnter: function () {
+                    gsap.fromTo(elem, { y: 100, autoAlpha: 0 }, {
+                        duration: 1.5,
+                        y: 0,
+                        autoAlpha: 1,
+                        ease: "power3.out",
+                        overwrite: "auto"
+                    });
+                }
+            });
+        });
+
+
+        // Side Navigation Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sideNav = document.getElementById('side-nav');
+
+        menuBtn.addEventListener('click', () => {
+            gsap.to(sideNav, {
+                duration: 0.5,
+                left: 0,
+                ease: "power3.out"
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            gsap.to(sideNav, {
+                duration: 0.5,
+                left: "-100%",
+                ease: "power3.in"
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
