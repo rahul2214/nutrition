@@ -245,7 +245,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/29272697-7717-46fc-8a97-5695a6fab524.home.png?v=1734977746046') no-repeat center center/cover;
+    background: url('https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/b98d1fe0-4296-409d-b467-6b3f2a39eaaa.image.png?v=1735640237116') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -878,7 +878,7 @@ textarea {
 
 .testimonial-section {
     position: relative;
-    background-image: url('https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/d9b946d2-b406-4d0b-b4e0-31c8ebc7d617.feedback.png?v=1734977735151');
+    background-image: url('https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2d3c577c-830d-40cf-aae7-c0a0f30de152.image.png?v=1735640636132');
     /* Replace with your background image path */
     background-size: cover;
     background-position: center;
