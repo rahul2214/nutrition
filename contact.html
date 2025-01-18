@@ -15,8 +15,9 @@
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333" alt="Srini Property Services Company Logo" title="Srini Property Services Logo"
-                    height="50px" loading="lazy">
+                <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333"
+                    alt="Srini Property Services Company Logo" title="Srini Property Services Logo" height="50px"
+                    loading="lazy">
                 <h1><strong> Nutryx</strong></h1>
             </a>
         </div>
@@ -39,7 +40,7 @@
 
         </ul>
     </div>
-<!--     <section class="contactus-section">
+    <!--     <section class="contactus-section">
         <div class="container revealUp">
             <p style="color: #333;">BE IN TOUCH</p>
             <h2 style="color: #333;">CONTACT</h2>
@@ -85,7 +86,7 @@
 
         </div>
     </div>
-  <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
+    <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
         rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
             title="Follow us on Instagram" loading="lazy">
@@ -98,11 +99,13 @@
         <!--         Chat with us -->
     </a>
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Nutryx. All rights reserved.</p>
-    </footer>
+<footer class="footer">
+    <p>&copy; <span id="currentYear"></span> <strong>Nutryx</strong>. All rights reserved.</p>
+    <p>Powered by <a href="https://veltria.in/"> <strong>Veltria</strong></a></p>
+</footer>
 
     <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
         // Carousel Logic
         let slideIndex = 1;
         showDivs(slideIndex);
