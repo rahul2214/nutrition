@@ -3,33 +3,25 @@
 
    <!-- Homepage -->
    <url>
-      <loc>https://nutryx.in/</loc>
-      <lastmod>2024-09-16</lastmod>
+      <loc>https://nutryx.in/index.html</loc>
+      <lastmod>2024-04-21</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
-   </url>
-
-   <!-- Services Page -->
-   <url>
-      <loc>https://nutryx.in/plans.html</loc>
-      <lastmod>2024-09-16</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
    </url>
 
    <!-- About Us Page -->
    <url>
       <loc>https://nutryx.in/about.html</loc>
-      <lastmod>2024-09-16</lastmod>
-      <changefreq>monthly</changefreq>
+      <lastmod>2024-04-21</lastmod>
+      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <!-- Contact Page -->
    <url>
       <loc>https://nutryx.in/contact.html</loc>
-      <lastmod>2024-09-16</lastmod>
-      <changefreq>yearly</changefreq>
+      <lastmod>2024-04-21</lastmod>
+      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
 

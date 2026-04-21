@@ -4,211 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Nutryx</title>
+    <title>About Nutryx - Our Expertise & Story</title>
+    <meta name="description"
+        content="Learn about Nutryx, founded by alumni of ICMR - National Institute of Nutrition. Discover our passion for science-backed, personalized nutrition and holistic health.">
+    <meta name="keywords"
+        content="Nutryx expertise, ICMR-NIN alumni, nutrition story, therapeutic nutrition team">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-    <style>
-        .about-header {
-            /* background: linear-gradient(to right, #6caf6b, #4a8c4d); */
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
+    <link rel="icon" href="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
+    <link rel="canonical" href="https://nutryx.in/about.html">
 
-        .about-header h2 {
-            margin: 0;
-            color: #555;
-            font-size: 40px;
-        }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nutryx.in/about.html">
+    <meta property="og:title" content="About Nutryx - Our Expertise & Story">
+    <meta property="og:description"
+        content="Learn about Nutryx, founded by alumni of ICMR - National Institute of Nutrition. Discover our passion for science-backed, personalized nutrition.">
+    <meta property="og:image"
+        content="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
 
-        .about-header p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nutryx.in/about.html">
+    <meta property="twitter:title" content="About Nutryx - Our Expertise & Story">
+    <meta property="twitter:description"
+        content="Learn about Nutryx, founded by alumni of ICMR - National Institute of Nutrition. Discover our passion for science-backed, personalized nutrition.">
+    <meta property="twitter:image"
+        content="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
 
-        .about-content {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-
-        .about-row.reverse {
-            flex-direction: row-reverse;
-        }
-
-        .about-text {
-            flex: 1;
-            padding: 20px;
-            max-width: 50%;
-        }
-
-        .about-text h3 {
-            font-size: 30px;
-            color: #6caf6b;
-            margin-bottom: 10px;
-        }
-
-        .about-text p {
-            text-align: justify;
-            font-size: 20px;
-        }
-
-        .about-image {
-            flex: 1;
-            width: 100%;
-            text-align: center;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            height: 100%;
-
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-row {
-                flex-direction: column;
-            }
-
-            .about-row.reverse {
-                flex-direction: column;
-            }
-
-            .about-text,
-            .about-image {
-                max-width: 100%;
-                padding: 0;
-            }
-        }
-
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-
-            .about-header h2 {
-                font-size: 28px;
-            }
-
-            .about-header p {
-                font-size: 16px;
-            }
-        }
-    </style>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333"
-                    alt="Logo" title="Logo" height="50px"
-                    loading="lazy">
-                <h1><strong> Nutryx</strong></h1>
+            <a href="index.html" class="logo-link">
+                <!-- <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333" 
+                     alt="Nutryx Logo" class="logo-img"> -->
+                <span class="logo-text">Nutryx</span>
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html"> <strong> Home </strong></a></li>
-<!--             <li><a href="plans.html"> <strong> Plans</strong></a></li> -->
-            <li><a href="about.html"> <strong> About Us </strong></a></li>
-            <li><a href="contact.html"> <strong> Contact </strong></a></li>
-
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <button class="menu-btn" id="menu-btn">☰</button>
     </nav>
+
+    <!-- Mobile Side Nav -->
     <div class="side-nav" id="side-nav">
         <button class="close-btn" id="close-btn">&times;</button>
         <ul class="side-nav-links">
-            <li><a href="index.html"> <strong> Home</strong></a></li>
-<!--             <li><a href="plans.html"> <strong> Plans</strong></a></li> -->
-            <li><a href="about.html"> <strong> About Us </strong></a></li>
-            <li><a href="contact.html"> <strong> Contact</strong></a></li>
-
+            <li><a href="index.html" class="side-nav-link">Home</a></li>
+            <li><a href="about.html" class="side-nav-link">About Us</a></li>
+            <li><a href="contact.html" class="side-nav-link">Contact</a></li>
         </ul>
     </div>
-    <header class="about-header">
-        <h2>About Nutryx</h2>
-        <p>Your trusted partner in achieving optimal health through personalized nutrition plans.</p>
+
+    <!-- Header Section -->
+    <header class="hero" style="min-height: 50vh; padding-top: 180px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;">
+        <div class="container">
+            <div class="section-title reveal" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                <h1 style="color: white;">About Nutryx</h1>
+                <p style="color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto;">Leading the way in personalized nutrition and holistic health transformation.</p>
+            </div>
+        </div>
     </header>
+
+    <!-- Story Section -->
     <section class="about-content">
-        <div class="who-we-are revealUp">
-            <div class="about-row">
-                <div class="about-text">
-                    <h3>Who We Are</h3>
-                    <p>
-                        At Nutryx, we are a team of dedicated nutrition experts passionate about promoting healthy
-                        lifestyles
-                        through personalized diet plans. Our mission is to simplify the journey to better health by
-                        providing
-                        practical, effective, and enjoyable nutrition strategies tailored to your unique needs.
-                    </p>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tag reveal">Our Journey</span>
+                    <h2 class="reveal">Science Meets <span style="display: block; color: var(--secondary); -webkit-text-fill-color: initial; background: none;">Personalization</span></h2>
+                    <p class="reveal">At Nutryx, we are a team of dedicated nutrition experts passionate about promoting healthy lifestyles through personalized diet plans. Our mission is to simplify the journey to better health by providing practical, effective, and enjoyable nutrition strategies tailored to your unique needs.</p>
+                    <p class="reveal">Founded by alumni of the prestigious ICMR - National Institute of Nutrition, Nutryx is a trailblazer in personalized nutrition. Backed by decades of expertise, we specialize in clinical and sports nutrition that empowers individuals to unlock their full potential.</p>
                 </div>
-                <div class="about-image">
-                    <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/9d73003b-8987-4449-9628-fe0b5b64845b.daily-track-icon.png?v=1734977731871"
-                        alt="About Nutryx" loading="lazy">
+                <div class="hero-image reveal">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800" alt="Healthy Lifestyle" style="border-radius: 2rem; box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </div>
-        <div class="who-we-are revealUp">
-            <div class="about-row">
-                <div class="about-text">
-                    <h3>Our Story</h3>
-                    <p>
-                        Founded by alumni of the prestigious ICMR - National Institute of Nutrition, Nutryx is a
-                        trailblazer in personalized nutrition and health transformation. Backed by decades of expertise,
-                        we specialize in clinical and sports nutrition that empowers individuals to unlock their full
-                        potential.</p>
-
-                    <p>At Nutryx, our lead nutritionist collaborates with a thriving community of 720+ clients,
-                        including professional athletes, fitness enthusiasts, and individuals tackling lifestyle
-                        challenges such as diabetes, thyroid disorders, and PCOS. Our global reach spans both national
-                        and international clients, driven by a passion for science-backed, individualized solutions.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/9d73003b-8987-4449-9628-fe0b5b64845b.daily-track-icon.png?v=1734977731871"
-                        alt="About Nutryx" loading="lazy">
-                </div>
-            </div>
-        </div>
-        <div class="who-we-are revealUp">
-            <div class="about-row">
-                <div class="about-text">
-                    <h3>Our Expertise</h3>
-                    <p>
-                        We specialize in crafting bespoke nutrition plans for: <br>
-
-                        <strong>Athletic Performance: </strong>Optimizing endurance, hydration, recovery, and peak
-                        performance. <br>
-                        <strong>Growth and Development: </strong>Guiding height growth and balanced nutrition for
-                        children and teens.<br>
-                        <strong>Weight Management: </strong>Sustainable weight loss or gain strategies that fit your
-                        lifestyle.<br>
-                        <strong>Lifestyle Diseases: </strong>Addressing conditions such as diabetes, thyroid issues, and
-                        PCOS with precision nutrition.
-                    </p>
-
-                </div>
-                <div class="about-image">
-                    <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/9d73003b-8987-4449-9628-fe0b5b64845b.daily-track-icon.png?v=1734977731871"
-                        alt="About Nutryx" loading="lazy">
-                </div>
-            </div>
-        </div>
-
-
     </section>
 
-    <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
+    <!-- Expertise Grid -->
+    <section class="programs" style="background: var(--bg-white);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Our Expertise</h2>
+                <p>We specialize in crafting bespoke nutrition plans for a wide range of needs.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=600" alt="Athletic Performance" class="program-image">
+                    <div class="program-card-content">
+                        <h3>Athletic Performance</h3>
+                        <p>Optimizing endurance, hydration, recovery, and peak performance for athletes at all levels.</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&q=80&w=600" alt="Growth & Development" class="program-image">
+                    <div class="program-card-content">
+                        <h3>Growth & Development</h3>
+                        <p>Guiding height growth and balanced nutrition for children and teens during critical years.</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600" alt="Lifestyle Diseases" class="program-image">
+                    <div class="program-card-content">
+                        <h3>Lifestyle Diseases</h3>
+                        <p>Addressing conditions such as diabetes, thyroid issues, and PCOS with precision clinical nutrition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
         rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
             title="Follow us on Instagram" loading="lazy">
@@ -222,83 +138,13 @@
     </a>
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; <span id="currentYear"></span> <strong>Nutryx</strong>. All rights reserved.</p>
-        <p>Powered by <a href="https://veltria.in/"> <strong>Veltria</strong></a></p>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Nutryx. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Developed by <a href="https://veltria.in/">VELTRIA</a></p>
+        </div>
+
     </footer>
-
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-        // Carousel Logic
-        let slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            const slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-
-            // Add smooth fade-in/out animations
-            Array.from(slides).forEach((slide, i) => {
-                gsap.to(slide, {
-                    duration: 0.5,
-                    opacity: i === (slideIndex - 1) ? 1 : 0,
-                    display: i === (slideIndex - 1) ? 'block' : 'none',
-                    ease: "power1.inOut"
-                });
-            });
-        }
-
-        // Scroll Animations with GSAP
-
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.utils.toArray(".revealUp").forEach(function (elem) {
-            ScrollTrigger.create({
-                trigger: elem,
-                start: "top 80%",
-                end: "bottom 20%",
-                once: true, // Animation triggers only once
-                onEnter: function () {
-                    gsap.fromTo(elem, { y: 100, autoAlpha: 0 }, {
-                        duration: 1.5,
-                        y: 0,
-                        autoAlpha: 1,
-                        ease: "power3.out",
-                        overwrite: "auto"
-                    });
-                }
-            });
-        });
-
-
-        // Side Navigation Logic
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
-        const sideNav = document.getElementById('side-nav');
-
-        menuBtn.addEventListener('click', () => {
-            gsap.to(sideNav, {
-                duration: 0.5,
-                left: 0,
-                ease: "power3.out"
-            });
-        });
-
-        closeBtn.addEventListener('click', () => {
-            gsap.to(sideNav, {
-                duration: 0.5,
-                left: "-100%",
-                ease: "power3.in"
-            });
-        });
-
-
-    </script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

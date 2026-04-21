@@ -4,88 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Nutryx</title>
+    <title>Contact Nutryx - Get Your Personalized Diet Plan</title>
+    <meta name="description"
+        content="Start your health transformation today. Contact Nutryx for a personalized nutrition consultation. We are here to help you reach your goals.">
+    <meta name="keywords"
+        content="Contact Nutryx, diet consultation, nutrition appointment, hire nutritionist">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <link rel="icon" href="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
+    <link rel="canonical" href="https://nutryx.in/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nutryx.in/contact.html">
+    <meta property="og:title" content="Contact Nutryx - Get Your Personalized Diet Plan">
+    <meta property="og:description"
+        content="Start your health transformation today. Contact Nutryx for a personalized nutrition consultation.">
+    <meta property="og:image"
+        content="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nutryx.in/contact.html">
+    <meta property="twitter:title" content="Contact Nutryx - Get Your Personalized Diet Plan">
+    <meta property="twitter:description"
+        content="Start your health transformation today. Contact Nutryx for a personalized nutrition consultation.">
+    <meta property="twitter:image"
+        content="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333"
-                    alt="Logo" title="Logo" height="50px"
-                    loading="lazy">
-                <h1><strong> Nutryx</strong></h1>
+            <a href="index.html" class="logo-link">
+                <!-- <img src="https://cdn.glitch.global/4f30feda-0e24-487b-bc62-6f7d798498a7/2108e0ee-4784-491d-bfbd-d32b1a36ea23.logo.jpg?v=1734977730333" 
+                     alt="Nutryx Logo" class="logo-img"> -->
+                <span class="logo-text">Nutryx</span>
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html"> <strong> Home </strong></a></li>
-<!--             <li><a href="plans.html"> <strong> Plans</strong></a></li> -->
-            <li><a href="about.html"> <strong> About Us </strong></a></li>
-            <li><a href="contact.html"> <strong> Contact </strong></a></li>
-
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
-        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <button class="menu-btn" id="menu-btn">☰</button>
     </nav>
+
+    <!-- Mobile Side Nav -->
     <div class="side-nav" id="side-nav">
         <button class="close-btn" id="close-btn">&times;</button>
         <ul class="side-nav-links">
-            <li><a href="index.html"> <strong> Home</strong></a></li>
-<!--             <li><a href="plans.html"> <strong> Plans</strong></a></li> -->
-            <li><a href="about.html"> <strong> About Us </strong></a></li>
-            <li><a href="contact.html"> <strong> Contact</strong></a></li>
-
+            <li><a href="index.html" class="side-nav-link">Home</a></li>
+            <li><a href="about.html" class="side-nav-link">About Us</a></li>
+            <li><a href="contact.html" class="side-nav-link">Contact</a></li>
         </ul>
     </div>
-    <!--     <section class="contactus-section">
-        <div class="container revealUp">
-            <p style="color: #333;">BE IN TOUCH</p>
-            <h2 style="color: #333;">CONTACT</h2>
 
-        </div>
-    </section> -->
-
-
-    <!-- Insert this content in the "Content for each page will go here" section -->
-    <div class="contact-section ">
-
-        <div class="contact-header revealUp">
-            <h2>CONTACT US</h2>
-        </div>
-        <div class="contact-content revealUp">
-            <div class="office-info">
-                <h2>TO SPEAK WITH US,
-                    <br>
-                    PLEASE CALL OR EMAIL US:
-                </h2>
-                <p>Tel: +919515826360</p>
-                <p>Email: nutryx.in@gmail.com</p>
+    <header class="hero" style="min-height: 50vh; padding-top: 180px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516383748286-53890f5cb687?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;">
+        <div class="container">
+            <div class="section-title reveal">
+                <h1 style="color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Contact Nutryx</h1>
+                <p style="color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto;">Start your health transformation today. Reach out for a consultation.</p>
             </div>
-            <div class="contact-form">
-                <form action="https://api.web3forms.com/submit" method="POST">
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Ready to unlock a healthier you? Fill out the form or reach us directly via phone or email.</p>
+                    
+                    <div class="contact-items" style="margin-top: 2rem;">
+                        <div class="contact-item">
+                            <div class="program-icon" style="margin-bottom: 0; width: 50px; height: 50px;">📞</div>
+                            <div>
+                                <h4 style="color: var(--primary);">Call Us</h4>
+                                <p>+91 95158 26360</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="margin-top: 1.5rem;">
+                            <div class="program-icon" style="margin-bottom: 0; width: 50px; height: 50px;">📧</div>
+                            <div>
+                                <h4 style="color: var(--primary);">Email Us</h4>
+                                <p>nutryx.in@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                     <input type="hidden" name="access_key" value="127add98-463f-47f0-b3dc-e4d72cf68c68">
-                    <div class="form-row">
-                        <input type="text" name="firstName" placeholder="First Name" required>
-                        <input type="text" name="lastName" placeholder="Last Name" required>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required>
                     </div>
-                    <div class="form-row">
-                        <input type="number" name="phoneNumber" placeholder="Phone Number" required>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
                     </div>
-                    <div class="form-row">
-                        <textarea name="specificRequirements" placeholder="Enter any specific requirements"></textarea>
+                    <div class="form-group full">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="+91 98765 43210" required>
                     </div>
-                    <div class="form-row">
-                        <textarea name="message" placeholder="Message" required></textarea>
+                    <div class="form-group full">
+                        <label for="requirements">Specific Requirements</label>
+                        <textarea id="requirements" name="specificRequirements" placeholder="E.g., Weight loss, Sports nutrition..."></textarea>
                     </div>
-                    <button type="submit">Submit</button>
+                    <div class="form-group full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <div class="form-group full">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </div>
                 </form>
             </div>
-
         </div>
-    </div>
+    </section>
+
     <a href="https://www.instagram.com/nutryx.in/profilecard/?igsh=MTdzbmlwZjh2bWtnNQ==" class="instagram-button"
         rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
@@ -99,84 +142,14 @@
         <!--         Chat with us -->
     </a>
     <!-- Footer -->
-<footer class="footer">
-    <p>&copy; <span id="currentYear"></span> <strong>Nutryx</strong>. All rights reserved.</p>
-    <p>Powered by <a href="https://veltria.in/"> <strong>Veltria</strong></a></p>
-</footer>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Nutryx. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Developed by <a href="https://veltria.in/">VELTRIA</a></p>
+        </div>
 
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-        // Carousel Logic
-        let slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            const slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-
-            // Add smooth fade-in/out animations
-            Array.from(slides).forEach((slide, i) => {
-                gsap.to(slide, {
-                    duration: 0.5,
-                    opacity: i === (slideIndex - 1) ? 1 : 0,
-                    display: i === (slideIndex - 1) ? 'block' : 'none',
-                    ease: "power1.inOut"
-                });
-            });
-        }
-
-        // Scroll Animations with GSAP
-
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.utils.toArray(".revealUp").forEach(function (elem) {
-            ScrollTrigger.create({
-                trigger: elem,
-                start: "top 80%",
-                end: "bottom 20%",
-                once: true, // Animation triggers only once
-                onEnter: function () {
-                    gsap.fromTo(elem, { y: 100, autoAlpha: 0 }, {
-                        duration: 1.5,
-                        y: 0,
-                        autoAlpha: 1,
-                        ease: "power3.out",
-                        overwrite: "auto"
-                    });
-                }
-            });
-        });
-
-
-        // Side Navigation Logic
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
-        const sideNav = document.getElementById('side-nav');
-
-        menuBtn.addEventListener('click', () => {
-            gsap.to(sideNav, {
-                duration: 0.5,
-                left: 0,
-                ease: "power3.out"
-            });
-        });
-
-        closeBtn.addEventListener('click', () => {
-            gsap.to(sideNav, {
-                duration: 0.5,
-                left: "-100%",
-                ease: "power3.in"
-            });
-        });
-
-
-    </script>
+    </footer>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
